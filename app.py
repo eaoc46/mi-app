@@ -11,7 +11,7 @@ modelo, min_max_scaler, variables = pickle.load(open(filename, 'rb'))
 
 #Se crea interfaz gráfica con streamlit para captura de los datos
 import streamlit as st
-st.title('Predicción de inversión en una tienda de videojuegos')
+st.title('Predicción de inversión en una tienda de videojuegos 2026')
 Edad = st.slider('Edad', min_value=14, max_value=52, value=20, step=1)
 videojuego = st.selectbox('Videojuego', ["'Mass Effect'","'Battlefield'", "'Fifa'","'KOA: Reckoning'","'Crysis'","'Sim City'","'Dead Space'","'F1'"])
 Plataforma = st.selectbox('Plataforma', ["'Play Station'", "'Xbox'","PC","Otros"])
